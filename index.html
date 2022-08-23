@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi app web</title>
+</head>
+<body>
+    <h1>Teoria y Práctica de GIT y GITHUG</h1>
+    <div>
+        <p>Git es una herramienta que nos ayuda a controlar el avance que va teniendo nuestro
+           proyecto con respecto al tiempo
+        </p>
+        <h2>Áreas de Git: </h2>
+        <p>Son en estas áreas que se van moviendo los cambios o avances que se tiene del proyecto a
+           medida que va creciendo: <br>
+           Working Directory <br>
+           Staging area <br>
+           Repository git <br>
+        </p>
+        <h2>Comandos de GIT</h2>
+        <p>git commit: se abre un editor en la terminal para escribir lo agregado o cambiado desde
+           Working directory al Staging area con el “git add” <br>
+
+            git add . : el punto se refiere a que agregará a todos los archivos que han sido creados 
+            o sufrido algún cambio en el Working directory. <br>
+
+            git commit -m “texto alusivo a lo agregado” : de esta manera se evita abrir el editor en 
+            la terminal. <br>
+
+            git log : Se pueden apreciar los commits (Cambios) que se lleva en el proyecto. (Entro en 
+            un estado de archivos, para salir uso la tecla Q). <br>
+
+            git status : Nos muestra los archivos que están agregados (verde) al Staging area y los que
+            faltan(rojo) por agregar. Para luego ser commiteados. <br>
+
+            rm+ nombre_archivo: nos permite eliminar un archivo seleccionado del repositorio, sin subir 
+            los cambios al staging. <br>
+
+            git rm + nombre_archivo: Nos permite eliminar un archivo y adicional agrega los cambios al
+            staging. <br>
+
+            git restore - - staged + nombre_archivo:  nos permite sacar algún cambio subidos al staging.
+            siempre y cuando el archivo no haya sido commiteado. <br>
+
+            mv + nombre_archivo + nuevo_nombreArchivo: Permite mover o renombrar archivos, sin subir los 
+            cambios al staging. <br>
+
+            git mv + nombre_archivo + nuevo_nombreArchivo: Permite mover o renombrar archivos y adicional
+            agrega los cambios al staging. <br>
+
+            Ignorando archivos y directorios: Esto nos permite ignorar archivos para que no sean incluidos
+            nunca en los repositorios de git. Esto se hace por la necesidad de crear archivos de 
+            configuración se sean específicos para nuestra máquina. Ejemplo: variables de entornos (.env). <br>
+                           
+                             Se crea un archivo en el editor de código llamado .env <br>
+                             Se crea un archivo en el editor de código llamado .gitignore <br>
+                             Dentro de .gitignore se introduce .env. <br>
+                             Al hacer git status solo nos tocará agregar .gitignore al
+                             repositorio. <br>
+
+            git status -s: Permite ver cambios de una manera más visual. <br>
+
+            git log —oneline: Permite revisar el historial de todo nuestro proyecto. <br>
+
+            git branch: Nos muestra la rama en que se esta trabajando. <br>
+
+            git branch + nombre-rama/ git checkout + nombre-rama: Nos crea una nueva rama de trabajo. <br>
+
+            git checkout -b “features/nombre-de-la-funcionalidad” <br>
+            git checkout -b “SS-4515 (Nombre del tickets)” <br>
+            git checkout -b ramab : se crea una rama nueva de trabajo de manera más rápida. <br>
+            
+            git checkout + nombre-rama: Nos lleva a la rama mencionada. <br>
+
+            cat + nombre-archivo: Nos muestra el contenido de nuestros archivos. <br>
+
+            git merge + nombre-rama: Nos trae toda la rama especificada a la rama actual ubicada. <br>
+
+            git remote add origin https://github.com/hug0f/miweb.git : <br>
+            git remote: Nos sirve para indicar si vamos a tener un servidor remoto en el cual vamos a 
+            subir nuestro cambios. <br>
+            add origin: les estamos indicando de donde vamos a buscar nuestro cambios y a donde 
+            tenemos que subir nuestros cambios. <br>
+            url: dónde se encuentra almacenado nuestro código. <br>
+
+            git push -u origin main: <br>
+                git push: Es con el cual podemos subir nuestros cambios, los cuales serán con respecto 
+                a la rama que se este trabajando.<br>
+        </p>
+
+
+
+
+        <h3>Algunos Comandos dentro de la terminal:</h3>
+            
+        <p> ls: Nos permite listar todos los archivos y carpetas que se encuentran en el directorio.<br>
+            pwd: nos permite ubicarnos en la carpeta donde nos encontremos. <br>
+            cd: nos permite movernos entre las diferentes carpetas enlistadas. 
+            (Ejemplo: cd nombre_carpeta/).
+            cd .. : nos permite regresar a la carpeta anterior. <br>
+            mkdir + nombre_nueva_carpeta: nos permite crear una nueva carpeta en el sitio que nos encontremos ubicados. <br>
+            command + k: limpio la terminal. <br>
+        </p>   
+        
+    </div>
+
+</body>
+</html>
